@@ -1,0 +1,57 @@
+{
+  "name": "@chriscarrillo/ts",
+  "version": "0.1.0",
+  "description": "Personal TypeScript configurations",
+  "author": "Chris Carrillo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriscarrillo/ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chriscarrillo/ts/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "yarn run lint -- --fix",
+    "test": "yarn run lint && jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^26.6.1",
+    "@types/jest": "^26.0.15",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-functional": "^3.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "jest": "^26.6.1",
+    "prettier": "^2.1.2",
+    "react": "^17.0.1",
+    "ts-jest": "^26.4.2",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-plugin-dynamic-import-node": "^2.3.3",
+    "eslint": "^7.12.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-functional": "^3.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "jest": ">=26.6.1",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.2"
+  }
+}
