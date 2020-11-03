@@ -11,6 +11,7 @@ const rules = [
   './rules/node',
   './rules/possible-errors',
   './rules/react',
+  './rules/sonar',
   './rules/stylistic-issues',
   './rules/typescript',
   './rules/variables',
