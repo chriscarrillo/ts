@@ -97,3 +97,17 @@ npm install babel-plugin-dynamic-import-node
 npm install jest
 npm install ts-jest
 ```
+
+In `jest.config.js`:
+
+```
+const {pathsToModuleNameMapper} = require('ts-jest/utils')
+const {compilerOptions} = require('./tsconfig')
+
+module.exports = {
+    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
+        prefix: '<rootDir>/',
+    }),
+    preset: '@chirscarrillo/ts'
+}
+```
