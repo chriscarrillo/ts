@@ -81,3 +81,19 @@ module.exports = {
   ...require('@chriscarrillo/ts/lint')
 }
 ```
+
+## Jest
+
+```
+yarn add babel-plugin-dynamic-import-node
+yarn add jest
+yarn add ts-jest
+```
+
+or
+
+```
+npm install babel-plugin-dynamic-import-node
+npm install jest
+npm install ts-jest
+```
