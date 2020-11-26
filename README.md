@@ -20,7 +20,16 @@ In `tsconfig.json`:
 
 ```
 {
-  "extends": "@chriscarrillo/ts"
+  "extends": "./node_modules/@chriscarrillo/ts/tsconfig.json"
+}
+```
+
+In `tsconfig.base.json`:
+
+```
+{
+  "compilerOptions": {"baseUrl": "./src"},
+  "extends": "./node_modules/@chriscarrillo/ts/config/base.json"
 }
 ```
 
@@ -109,5 +118,31 @@ module.exports = {
         prefix: '<rootDir>/',
     }),
     preset: '@chirscarrillo/ts'
+}
+```
+
+## Visual Studio Code
+
+`settings.json`:
+
+```
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.format.enable": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }
 ```
