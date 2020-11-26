@@ -48,7 +48,7 @@ npm install -D prettier
 In `.prettierrc.js`:
 
 ```
-modules.exports = require('@chriscarrillo/ts/format')
+module.exports = require('@chriscarrillo/ts/format')
 ```
 
 ## ESLint
