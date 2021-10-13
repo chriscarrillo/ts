@@ -51,7 +51,7 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: path.resolve(),
   },
-  plugins: ['functional', 'import', 'react-hooks'],
+  plugins: ['functional', 'import', 'jsdoc', 'prettier', 'react', 'react-hooks', 'sonarjs'],
   root: true,
   rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
   settings: {
