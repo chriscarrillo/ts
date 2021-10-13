@@ -1,10 +1,8 @@
 'use strict'
 
 const path = require('path')
-const preset = require('ts-jest')
 
 module.exports = {
-  ...preset,
   coverageThreshold: {
     global: {
       branches: 100,
@@ -22,5 +20,5 @@ module.exports = {
       tsconfig: path.join(__dirname, './config/node.json'),
     },
   },
-  testEnvironment: 'node',
+  preset: 'ts-jest',
 }
