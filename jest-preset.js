@@ -1,7 +1,7 @@
 'use strict'
 
 const path = require('path')
-const preset = require('ts-jest/jest-preset')
+const preset = require('ts-jest')
 
 module.exports = {
   ...preset,
@@ -19,7 +19,7 @@ module.exports = {
         plugins: ['dynamic-import-node'],
       },
       isolatedModules: true,
-      tsConfig: path.join(__dirname, './config/node.json'),
+      tsconfig: path.join(__dirname, './config/node.json'),
     },
   },
   testEnvironment: 'node',
