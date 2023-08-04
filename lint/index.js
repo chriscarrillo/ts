@@ -55,7 +55,6 @@ module.exports = {
   root: true,
   rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
   settings: {
-    jsdoc: {tagNamePreference: {returns: 'return'}},
     react: {version: 'detect'},
   },
 }

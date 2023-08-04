@@ -15,6 +15,12 @@ module.exports = {
     'one-var': ['error', 'never'],
     'operator-assignment': ['error', 'always'],
     'prefer-exponentiation-operator': 'error',
-    'sort-keys': 'error',
+    'sort-keys': [
+      'error',
+      'asc',
+      {
+        natural: true,
+      },
+    ],
   },
 }

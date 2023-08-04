@@ -3,7 +3,16 @@
 module.exports = {
   allRules: {
     '@typescript-eslint/array-type': 'error',
-    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        minimumDescriptionLength: 3,
+        'ts-check': false,
+        'ts-expect-error': 'allow-with-description',
+        'ts-ignore': false,
+        'ts-nocheck': true,
+      },
+    ],
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/default-param-last': 'error',
@@ -26,7 +35,6 @@ module.exports = {
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-misused-promises': ['error', {checksVoidReturn: false}],
-    '@typescript-eslint/no-parameter-properties': 'error',
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
@@ -35,9 +43,10 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unused-expressions': ['error', {allowTaggedTemplates: true}],
     '@typescript-eslint/no-unused-vars': [
-      'error',
+      'warn',
       {
         argsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
       },
     ],
@@ -45,12 +54,11 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
-    '@typescript-eslint/prefer-nullish-coalescing': ['error', {forceSuggestionFixer: true}],
+    '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
     '@typescript-eslint/promise-function-async': 'error',
     '@typescript-eslint/require-array-sort-compare': 'error',
-    '@typescript-eslint/restrict-plus-operands': ['error', {checkCompoundAssignments: true}],
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       {allowBoolean: true, allowNumber: true},

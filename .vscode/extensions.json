@@ -1,8 +1,29 @@
 {
   "recommendations": [
-    "arcanis.vscode-zipfs",
+    "aaron-bond.better-comments",
+    "adpyke.codesnap",
+    "bradlc.vscode-tailwindcss",
+    "britesnow.vscode-toggle-quotes",
+    "christian-kohler.npm-intellisense",
     "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
     "editorconfig.editorconfig",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "irongeek.vscode-env",
+    "letrieu.expand-region",
+    "meganrogge.template-string-converter",
+    "oderwat.indent-rainbow",
+    "orta.vscode-jest",
+    "richie5um2.vscode-sort-json",
+    "silesky.toggle-boolean",
+    "styled-components.vscode-styled-components",
+    "usernamehw.errorlens",
+    "vscode-icons-team.vscode-icons",
+    "vscodevim.vim",
+    "xyc.vscode-mdx-preview",
+    "wayou.vscode-todo-highlight",
+    "yoavbls.pretty-ts-errors",
+    "zhuangtongfa.material-theme",
   ]
 }

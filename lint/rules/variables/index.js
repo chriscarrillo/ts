@@ -3,7 +3,7 @@
 module.exports = {
   allRules: {
     'no-label-var': 'error',
-    // Encourage use of @jest/globals
+    // Encourage use of @jest/globals.
     'no-restricted-globals': [
       'error',
       'jest',

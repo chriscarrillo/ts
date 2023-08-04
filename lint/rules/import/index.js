@@ -20,6 +20,7 @@ module.exports = {
           {group: 'internal', pattern: '_/**'},
           {group: 'internal', pattern: '-/**'},
           {group: 'internal', pattern: '~/**'},
+          {group: 'internal', pattern: '@/**'},
         ],
       },
     ],

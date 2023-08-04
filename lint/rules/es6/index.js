@@ -2,7 +2,7 @@
 
 module.exports = {
   allRules: {
-    'arrow-body-style': 'error',
+    'arrow-body-style': ['error', 'as-needed'],
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
