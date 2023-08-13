@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -14,13 +14,13 @@ module.exports = {
     'import/order': [
       'error',
       {
-        alphabetize: {order: 'asc'},
+        alphabetize: { order: 'asc' },
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
         pathGroups: [
-          {group: 'internal', pattern: '_/**'},
-          {group: 'internal', pattern: '-/**'},
-          {group: 'internal', pattern: '~/**'},
-          {group: 'internal', pattern: '@/**'},
+          { group: 'internal', pattern: '_/**' },
+          { group: 'internal', pattern: '-/**' },
+          { group: 'internal', pattern: '~/**' },
+          { group: 'internal', pattern: '@/**' },
         ],
       },
     ],
@@ -32,4 +32,4 @@ module.exports = {
     'import/namespace': 'error',
     'import/no-unresolved': 'error',
   },
-}
+};

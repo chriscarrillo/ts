@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-const path = require('path')
+const path = require('path');
 
 const rules = [
   './rules/best-practices',
@@ -15,7 +15,7 @@ const rules = [
   './rules/stylistic-issues',
   './rules/typescript',
   './rules/variables',
-].map(require)
+].map(require);
 
 module.exports = {
   env: {
@@ -29,6 +29,8 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:react/recommended',
     'plugin:sonarjs/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -37,11 +39,11 @@ module.exports = {
   overrides: [
     {
       files: ['*.js', '*.jsx'],
-      rules: rules.reduce((r, {jsRules}) => ({...r, ...jsRules}), {}),
+      rules: rules.reduce((r, { jsRules }) => ({ ...r, ...jsRules }), {}),
     },
     {
       files: ['*.ts', '*.tsx'],
-      rules: rules.reduce((r, {tsRules}) => ({...r, ...tsRules}), {}),
+      rules: rules.reduce((r, { tsRules }) => ({ ...r, ...tsRules }), {}),
     },
   ],
   parser: '@typescript-eslint/parser',
@@ -51,10 +53,21 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: path.resolve(),
   },
-  plugins: ['functional', 'import', 'jsdoc', 'prettier', 'react', 'react-hooks', 'sonarjs'],
+  plugins: [
+    '@arthurgeron/react-usememo',
+    'functional',
+    'import',
+    'jsdoc',
+    'prettier',
+    'react',
+    'react-hooks',
+    'sonarjs',
+  ],
   root: true,
-  rules: rules.reduce((r, {allRules}) => ({...r, ...allRules}), {}),
+  rules: rules.reduce((r, { allRules }) => ({ ...r, ...allRules }), {}),
   settings: {
-    react: {version: 'detect'},
+    react: {
+      version: 'detect',
+    },
   },
-}
+};

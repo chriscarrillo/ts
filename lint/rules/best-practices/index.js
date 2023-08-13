@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -13,7 +13,7 @@ module.exports = {
     'no-caller': 'error',
     'no-constructor-return': 'error',
     'no-div-regex': 'error',
-    'no-else-return': ['error', {allowElseIf: true}],
+    'no-else-return': ['error', { allowElseIf: true }],
     'no-eval': 'error',
     'no-implicit-coercion': 'error',
     'no-labels': 'error',
@@ -32,12 +32,12 @@ module.exports = {
     'no-unmodified-loop-condition': 'error',
     'no-useless-call': 'error',
     'no-useless-return': 'error',
-    'no-void': ['error', {allowAsStatement: true}],
+    'no-void': ['error', { allowAsStatement: true }],
     'prefer-named-capture-group': 'error',
     'prefer-promise-reject-errors': 'error',
     'prefer-regex-literals': 'error',
     radix: ['error', 'as-needed'],
-    yoda: ['error', 'never', {exceptRange: true}],
+    yoda: ['error', 'never', { exceptRange: true }],
   },
   jsRules: {
     'consistent-return': 'error',
@@ -48,4 +48,4 @@ module.exports = {
     'no-proto': 'error',
     'no-useless-concat': 'error',
   },
-}
+};

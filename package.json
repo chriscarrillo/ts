@@ -1,6 +1,6 @@
 {
   "name": "@chriscarrillo/ts",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Personal TypeScript configurations",
   "author": "Chris Carrillo",
   "license": "MIT",
@@ -13,10 +13,12 @@
   },
   "homepage": "https://github.com/chriscarrillo/ts#readme",
   "scripts": {
+    "format": "prettier --write .",
     "lint": "eslint .",
-    "lint:fix": "pnpm run lint --fix"
+    "lint:fix": "pnpm lint --fix"
   },
   "devDependencies": {
+    "@arthurgeron/eslint-plugin-react-usememo": "^1.1.4",
     "@jest/globals": "^29.6.2",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
@@ -25,6 +27,7 @@
     "eslint-plugin-functional": "^6.0.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jsdoc": "^46.4.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -34,6 +37,7 @@
     "typescript": "^5.1.6"
   },
   "peerDependencies": {
+    "@arthurgeron/eslint-plugin-react-usememo": "^1.1.4",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
@@ -41,6 +45,7 @@
     "eslint-plugin-functional": "^6.0.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-jsdoc": "^46.4.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",

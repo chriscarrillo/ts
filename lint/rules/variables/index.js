@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -24,4 +24,4 @@ module.exports = {
     'no-shadow': 'error',
     'no-undef-init': 'error',
   },
-}
+};

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -12,4 +12,4 @@ module.exports = {
     'no-mixed-requires': 'error',
     'no-new-require': 'error',
   },
-}
+};

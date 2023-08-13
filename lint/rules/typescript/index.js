@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -26,22 +26,22 @@ module.exports = {
         leadingUnderscore: 'allow',
         selector: 'variableLike',
       },
-      {format: ['PascalCase'], selector: 'typeLike'},
+      { format: ['PascalCase'], selector: 'typeLike' },
     ],
     '@typescript-eslint/no-dynamic-delete': 'error',
-    '@typescript-eslint/no-empty-interface': ['error', {allowSingleExtends: true}],
+    '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
-    '@typescript-eslint/no-misused-promises': ['error', {checksVoidReturn: false}],
+    '@typescript-eslint/no-misused-promises': ['error', { checksVoidReturn: false }],
     '@typescript-eslint/no-throw-literal': 'error',
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
-    '@typescript-eslint/no-unused-expressions': ['error', {allowTaggedTemplates: true}],
+    '@typescript-eslint/no-unused-expressions': ['error', { allowTaggedTemplates: true }],
     '@typescript-eslint/no-unused-vars': [
       'warn',
       {
@@ -61,12 +61,12 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
-      {allowBoolean: true, allowNumber: true},
+      { allowBoolean: true, allowNumber: true },
     ],
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/strict-boolean-expressions': [
       'error',
-      {allowAny: true, allowNumber: false, allowString: false},
+      { allowAny: true, allowNumber: false, allowString: false },
     ],
     '@typescript-eslint/unified-signatures': 'error',
   },
@@ -75,8 +75,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-return': 'off',
   },
   tsRules: {
-    '@typescript-eslint/explicit-member-accessibility': ['error', {accessibility: 'no-public'}],
+    '@typescript-eslint/explicit-member-accessibility': ['error', { accessibility: 'no-public' }],
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-var-requires': 'error',
   },
-}
+};

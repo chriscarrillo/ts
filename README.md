@@ -2,7 +2,7 @@
 
 # Installation
 
-```shell
+```bash
 pnpm install -D @chriscarrillo/ts
 ```
 
@@ -29,20 +29,20 @@ In `tsconfig.base.json`:
 
 ## Prettier
 
-```shell
+```bash
 ppnpm install -D prettier
 ```
 
 In `.prettierrc.js`:
 
 ```javascript
-module.exports = require('@chriscarrillo/ts/format')
+module.exports = require('@chriscarrillo/ts/format');
 ```
 
 ## ESLint
 
-```shell
-pnpm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-functional eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-sonarjs
+```bash
+pnpm install -D @arthurgeron/eslint-plugin-react-usememo @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-functional eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-jsdoc eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-sonarjs
 ```
 
 In `.eslintrc.js`:
@@ -50,5 +50,5 @@ In `.eslintrc.js`:
 ```javascript
 module.exports = {
   ...require('@chriscarrillo/ts/lint'),
-}
+};
 ```

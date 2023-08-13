@@ -1,14 +1,14 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
     'jsdoc/check-alignment': 'off',
-    'jsdoc/match-description': ['error', {contexts: ['any']}],
-    'jsdoc/require-description': ['error', {contexts: ['any']}],
+    'jsdoc/match-description': ['error', { contexts: ['any'] }],
+    'jsdoc/require-description': ['error', { contexts: ['any'] }],
     'jsdoc/require-hyphen-before-param-description': ['error', 'never'],
     'jsdoc/require-jsdoc': [
       'error',
-      {contexts: ['ExportDefaultDeclaration', 'ExportNamedDeclaration']},
+      { contexts: ['ExportDefaultDeclaration', 'ExportNamedDeclaration'] },
     ],
     'jsdoc/require-returns-type': 'off',
   },
@@ -16,4 +16,4 @@ module.exports = {
     'jsdoc/no-types': 'error',
     'jsdoc/require-param-type': 'off',
   },
-}
+};

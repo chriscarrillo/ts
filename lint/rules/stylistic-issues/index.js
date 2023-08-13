@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
-    'capitalized-comments': ['error', 'always', {ignoreConsecutiveComments: true}],
+    'capitalized-comments': ['error', 'always', { ignoreConsecutiveComments: true }],
     'consistent-this': ['error', 'self'],
-    'func-style': ['error', 'declaration', {allowArrowFunctions: true}],
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
     'max-len': ['error', 100],
     'max-lines': ['error', 500],
     'max-lines-per-function': ['error', 300],
@@ -23,4 +23,4 @@ module.exports = {
       },
     ],
   },
-}
+};

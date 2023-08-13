@@ -1,15 +1,15 @@
-'use strict'
+'use strict';
 
 module.exports = {
   arrowParens: 'avoid',
+  bracketSameLine: false,
   bracketSpacing: true,
   endOfLine: 'lf',
-  jsxBracketSameLine: false,
   printWidth: 100,
   quoteProps: 'as-needed',
-  semi: false,
+  semi: true,
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
   useTabs: false,
-}
+};

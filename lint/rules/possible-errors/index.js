@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   allRules: {
@@ -10,4 +10,4 @@ module.exports = {
     'no-import-assign': 'error',
     'no-setter-return': 'error',
   },
-}
+};
